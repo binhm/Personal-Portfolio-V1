@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family:  'Montserrat',-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -10,4 +10,23 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/* PADDING FOR FIXED NAVBAR */
+.navbar-fixed-padding {
+  padding-top:5em !important;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+  background-color: #FEFEFE;
+}
+
+h1 {
+  color: #051747;
+}
+
+p, h2, h3, h4, li, ul {
+  color: #081F62;
 }

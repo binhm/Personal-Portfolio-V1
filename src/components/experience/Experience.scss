@@ -1,0 +1,12 @@
+.timeline-item--header.description {
+    padding-top: 10px;
+}
+
+.timeline-item--head a {
+    color: rgb(4, 24, 90);
+    text-decoration: none;
+    &:hover {
+        color: rgb(88, 113, 255)
+    }
+}
+

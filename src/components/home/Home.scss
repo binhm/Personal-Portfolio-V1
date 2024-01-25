@@ -1,0 +1,277 @@
+
+
+
+
+@keyframes animStar {
+    from {
+      transform: translateY(0px);
+    }
+    to {
+      transform: translateY(-2000px);
+    }
+  }
+  
+  @-webkit-keyframes BackgroundAnimation {
+    0% {
+      background-position: 0% 7%;
+    }
+    50% {
+      background-position: 100% 94%;
+    }
+    100% {
+      background-position: 0% 7%;
+    }
+  }
+  
+  @-moz-keyframes BackgroundAnimation {
+    0% {
+      background-position: 0% 7%;
+    }
+    50% {
+      background-position: 100% 94%;
+    }
+    100% {
+      background-position: 0% 7%;
+    }
+  }
+  
+  @-o-keyframes BackgroundAnimation {
+    0% {
+      background-position: 0% 7%;
+    }
+    50% {
+      background-position: 100% 94%;
+    }
+    100% {
+      background-position: 0% 7%;
+    }
+  }
+  
+  @keyframes BackgroundAnimation {
+    0% {
+      background-position: 0% 7%;
+    }
+    50% {
+      background-position: 100% 94%;
+    }
+    100% {
+      background-position: 0% 7%;
+    }
+  }
+  
+  @keyframes progress {
+    from {
+      transform: scaleX(0);
+      transform-origin: left;
+    }
+    to {
+      transform-origin: left;
+      transform: scaleX(1);
+    }
+  }
+
+  @keyframes flicker {
+    0% {
+      opacity: random();
+    } 100% {
+      opacity: 1;
+    }
+  }
+  
+
+
+// n is number of stars required
+@function multiple-box-shadow ($n) {
+  $value: '#{random(2000)}px #{random(2000)}px #FFF';
+  @for $i from 2 through $n {
+    $value: '#{$value} , #{random(2000)}px #{random(2000)}px #FFF';
+  }
+  @return unquote($value);
+}
+
+$shadows-small:  multiple-box-shadow(700);
+$shadows-medium: multiple-box-shadow(200);
+$shadows-big:    multiple-box-shadow(100) ;
+$star-top: 2000px;
+.bgstyle {
+    /* background: linear-gradient(136deg, #1ad7c0, #8E44AD, #ff9b11, #1F3A93, #ddd8c6, #000000, #000000);  */
+    /*background: linear-gradient(
+      136deg,
+      #4484ce,
+      #1ad7c0,
+      #ff9b11,
+      #9b59b6,
+      #ff7f7f,
+      #ecf0f1
+    );*/
+  
+    background-size: 1200% 1200%;
+    -webkit-animation: BackgroundAnimation 70s ease infinite;
+    -moz-animation: BackgroundAnimation 70s ease infinite;
+    -o-animation: BackgroundAnimation 70s ease infinite;
+    animation: BackgroundAnimation 70s ease infinite;
+    height: 100%;
+  }
+
+  .title {
+    height: 100%;
+    left: 0;
+    right: 0;
+    color: #fff;
+    text-align: center;
+    margin-top: 0px;
+  }
+
+#stars {
+    width: 1px;
+    height: 1px;
+    background: transparent;
+    animation: animStar 50s linear infinite;
+    box-shadow: $shadows-small;
+  }
+
+  #stars:after {
+    content: "";
+    position: absolute;
+    top: $star-top;
+    width: 1px;
+    height: 1px;
+    background: transparent;
+    box-shadow: $shadows-small;
+  }
+  
+  #stars-mid {
+    width: 2px;
+    height: 2px;
+    border-radius: 25%;
+    background: transparent;
+    animation: animStar 100s linear infinite;
+    box-shadow: $shadows-medium;
+  }
+  
+  #stars-mid:after {
+    content: "";
+    position: absolute;
+    top: $star-top;
+    width: 2px;
+    height: 2px;
+    border-radius: 25%;
+    background: transparent;
+    box-shadow: $shadows-medium;
+  }
+
+
+  #stars-large {
+    width: 3px;
+    height: 3px;
+    background: transparent;
+    border-radius: 50%;
+    animation: animStar 150s linear infinite, flicker .6s infinite;
+    box-shadow: $shadows-big;
+  }
+  
+  #stars-large:after {
+    content: "";
+    position: absolute;
+    top: $star-top;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background: transparent;
+    box-shadow: $shadows-big;
+  }
+
+
+  .shooting-star {
+    position: absolute;
+    left: percentage(.4 + floor(random() * ((.5 - .1) + 1)));
+    top: percentage(.4 + floor(random() * ((.5 - .1) + 1)));
+    height: 2px;
+    background: linear-gradient(-45deg, #FFF, rgba(0, 0, 255, 0));
+    border-radius: 999px;
+    filter: drop-shadow(0 0 6px #FFF);
+    animation: tail 3s ease-in-out infinite,
+        falling 3s ease-in-out infinite;
+}
+
+@keyframes tail {
+    0% {
+        width: 0;
+    }
+
+    30% {
+        width: 100px;
+    }
+
+    100% {
+        width: 0;
+    }
+}
+
+@keyframes falling {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(300px);
+    }
+}
+
+// .shooting-star::before,
+// .shooting-star::after {
+//     content: "";
+//     position: absolute;
+//     top: calc(50% - 1px);
+//     right: 0;
+//     height: 2px;
+//     background: linear-gradient(-45deg, rgba(0, 0, 255, 0), #FFF, rgba(0, 0, 255, 0));
+//     border-radius: 100%;
+//     transform: translateX(50%) rotateZ(45deg);
+//     animation: shining 3s ease-in-out infinite
+// }
+
+// @keyframes shining {
+//     0% {
+//         width: 0;
+//     }
+
+//     50% {
+//         width: 30px;
+//     }
+
+//     100% {
+//         width: 0;
+//     }
+// }
+
+.shooting-star::after {
+    transform: translateX(50%) rotateZ(-45deg);
+}
+
+.shooting-star:nth-child(1) {
+    top: calc(50% - 100px);
+    left: calc(50% - 250px);
+    animation-delay: 1s;
+}
+
+.shooting-star:nth-child(1)::before,
+.shooting-star:nth-child(1)::after {
+    animation-delay: 1s;
+}
+
+.shooting-star:nth-child(2) {
+    top: calc(50% - 50px);
+    left: calc(50% - 200px);
+    animation-delay: 1.2s;
+}
+
+.shooting-star:nth-child(2)::before,
+.shooting-star:nth-child(2)::after {
+    animation-delay: 1.2s;
+}
+
+
+.homeContainer h1, .homeContainer h6, .homeContainer p {
+  color: #F8F9FA;
+}

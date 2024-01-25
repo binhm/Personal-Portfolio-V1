@@ -68,3 +68,13 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+Resources Used:
+1) Card components inpsired by Aaron Iker
+2) Landing page inspired by [https://github.com/hashirshoaeb/home/blob/master/src/components/Navbar.jsx](Hashir Shoaib) 
+
+
+### Make changes to /constants/index.js:
+    - To customize portfolio, please edit this file and add the appropriate information. 

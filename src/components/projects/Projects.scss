@@ -1,0 +1,97 @@
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 300px);
+    grid-gap: 25px;
+    position: relative;
+    z-index: 1;
+    /* Display grid in the middle of the page */
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: space-evenly;
+    padding: 24px;
+   
+    /* align-items: center; */
+  }
+
+span.about-tech {
+  color: rgb(0, 0, 0);
+  display: inline-block;
+  font-size: 15px;
+  /* border-top: solid rgb(244, 171, 233); */
+  border: 1px solid rgb(191, 177, 189);
+  /* background-color: $base-color-pink; */
+  margin-left: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  /* margin-top: 5px; */
+  font-family: inherit;
+  /* font-weight: 200; */
+  font-size: 13px;
+  /* line-height: 2; */
+  /* &:hover {
+      background-color: rgb(184, 4, 73);
+  } */
+}
+
+.projects--wrapper {
+  margin-top: 10px;
+  position: relative;
+  /* border-top: solid rgb(244, 171, 233); */
+
+}
+
+.about-tech-list--wrapper {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid rgb(215, 163, 207);
+  & span {
+    color: #2f0b2c;
+
+  }
+}
+.about-circle {
+    width: 55%;
+    // width: min-content;
+    // max-width: 350px;
+    height: 350px;
+    background-color: rgb(9, 33, 94);
+    // border-right: 60px solid transparent;
+    // border-top: 60px solid rgb(9, 33, 94);
+    // border-left: 60px solid rgb(9, 33, 94);
+    // border-bottom: 60px solid rgb(9, 33, 94);
+    // border-top-left-radius: 60px;
+    // border-top-right-radius: 60px;
+    // border-bottom-left-radius: 60px;
+    // border-bottom-right-radius: 60px;
+    // border-radius: 100px;
+    // -webkit-border-radius: 500px;
+    // -moz-border-radius: 500px; 
+    /* -webkit-clip-path: polygon(0% 0%, 95% 0%, 100% 50%, 95% 100%, 0% 100%);
+    clip-path: polygon(0% 0%, 95% 0%, 100% 50%, 95% 100%, 0% 100%); */
+    overflow: hidden;
+    position: absolute;
+
+  
+    /* right: calc(70% + 2px); */
+    /* top: 50%; */
+    /* opacity: 50%; */
+    /* z-index: 1; */
+    
+}
+
+
+// .about-circle-inner {
+//   background-color: rgb(240, 12, 206);
+//   width: 500px;
+//   height: 350px;
+// }
+
+@function multiple-box-shadow ($n) {
+  $value: '#{random(2000)}px #{random(2000)}px #FFF';
+  @for $i from 2 through $n {
+    $value: '#{$value} , #{random(2000)}px #{random(2000)}px #FFF';
+  }
+  @return unquote($value);
+}
+
+$shadows-small:  multiple-box-shadow(700);
