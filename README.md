@@ -97,15 +97,7 @@ Resources Used:
 
 ### Customize Content:
     - Locate the file [constants/index.js](/src/constants/index.js) to add the appropriate information
-
-
-### To-DO
-
-
- Follow the steps here to publish:
- https://create-react-app.dev/docs/deployment/#github-pages
-
-
+    
 
 ### Improvement
 1) Code clean-up especially on the SCSS files
