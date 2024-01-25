@@ -76,5 +76,39 @@ Resources Used:
 2) Landing page inspired by [https://github.com/hashirshoaeb/home/blob/master/src/components/Navbar.jsx](Hashir Shoaib) 
 
 
-### Make changes to /constants/index.js:
-    - To customize portfolio, please edit this file and add the appropriate information. 
+## Set up & Deployment
+1) Git clone this repository
+2) To run locally, use ```npm start```
+
+### Deployment into Github page
+ 1) Check that your git repository is pointing at the correct repo. Use ```git remote -v``` and this should return ** https://github.com/<username>/<username>.github.git **
+    - If it is not, then you should make sure it is. 
+        ```git remote remove origin
+            git remote add origin **URL**
+            // do this if you want to upload the code
+            git add .
+            git commit -m MESSAGE
+            git push -u origin master
+            ///
+        ```
+
+    2)  Follow this [https://create-react-app.dev/docs/deployment/#github-pages](page) to set up the dependencies.
+    3) To deploy, run ```npm run deploy```
+
+### Customize Content:
+    - Locate the file [constants/index.js](/src/constants/index.js) to add the appropriate information
+
+
+### To-DO
+
+
+ Follow the steps here to publish:
+ https://create-react-app.dev/docs/deployment/#github-pages
+
+
+
+### Improvement
+1) Code clean-up especially on the SCSS files
+2) Clean up commented codes
+3) Add better UI for better User Experience. I.e. Resume is an icon on phone view, but there isn't a strong icon associated to Resume
+3) Optimize SEO by including keywords in HTML tags

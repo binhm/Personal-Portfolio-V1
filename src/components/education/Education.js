@@ -5,7 +5,7 @@ import {education} from "../../constants/index"
 
 const Education = () => {
   return (
-    <div id="education" className="navbar-fixed-padding">
+    <div id="education" className="education-section navbar-fixed-padding">
       <h1 className="display-1 mb-1 mt-0 text-center header" 
           style={{fontWeight: '1000'}}>Education.</h1>
         

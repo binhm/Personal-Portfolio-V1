@@ -6,7 +6,7 @@ const introduction = {
     pre_header: "Hi, my name is", // small sub header above the header
     header: "Binh Mai",
     sub_header: "Fullstack Software Engineer",
-    description: `A passionate developer that wants to solve real-life problems with technology`
+    description: `A passionate developer who wants to solve real-life problems with technology`
 }
 
 const resume_link = "https://drive.google.com/file/d/1zHrulLSNmaVkryxgYkgBsG14kuew4FRb/view?usp=sharing";
@@ -69,7 +69,7 @@ const projects = [
         title: "Personal Portfolio",
         description: "A personal portfolio that showcases my skillsets and history as a developer.",
         tech: ["React JS", "SCSS", "React Bootstrap"],
-        link: "",
+        link: "https://github.com/binhm/Personal-Porfolio",
         work_items: []
     }
 
@@ -118,18 +118,7 @@ const experiences = [
 
         ]
     }, 
-    // {
-    //     title: "Computer Science Student",
-    //     company_name: "University of California, Irvine",
-    //     link: "https://uci.edu/",
-    //     icon: require("../assets/university_of_california_irvine_logo.jpeg"),
-    //     date: "Sep 2017 - Jun 2021",
-    //     description: "I graduated at the University of California, Irvine with a BS in Computer Science.",
-    //     work_items: [
-    //         "GPA: 3.5 / 4.0",
-    //         "Relevant Coursework: System Design, Data & Web Design, Design and Analysis of Algorithm, Data Structures, Project in OS, Embedded and IoT Systems, Computer Vision"
-    //     ]
-    // }
+
 ]
 
 
