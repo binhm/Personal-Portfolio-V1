@@ -75,11 +75,26 @@ const projects = [
 
 ]
 
-
 const experiences = [
     {
         title: "Software Engineer",
-        company_name: "Walnut",
+        company_name: "Supermoney",
+        link: "https://www.linkedin.com/company/supermoney/",
+        icon: require("../assets/supermoney-logo.jpeg"),
+        date: "Jul 2024 - present",
+        description: "Supermoney is a tech startup that aims to relief people of their financial stress by offering tools such as a financial comparison platform and a budgeting app.",
+        work_items: [
+            "Designs a user-friendly authentication flow for passwordless & 2FA for mobile and web applications to reduce cybersecurity risks and combat users’ drop-off rate through  Auth.js and database schemas",
+            "Creates a Role-Based Access Control (RBAC) system to authorize users and effectively provides internal management and external partners more control over application usage to minimize turnaround time on site",
+            "Builds A/B tests with NextJS middleware to analyze drop-off & conversion rates, leading to an improvement in UI/UX design and a ~25k increase in monthly revenue for key products",
+            "Reduces response time of key API endpoints with 100k+ entries  from 17s to less than 300 ms by refining business logic and SQL queries",
+            "Improves up to ~15% of organic traffic and user’s retention rate by enhancing web vitals of crucial pages and creating NextJS sitemaps to index +1M pages for better SEO/SEM metrics",
+            "Launches multiple projects as lead engineer by collaborating with PM and Product Designers to deliver accurate timeline to stakeholders, ensuring that requirements and proper testing are satisfied"
+        ]
+    },
+    {
+        title: "Software Engineer",
+        company_name: "Arrow (formerly Walnut)",
         link: "https://www.linkedin.com/company/hellowalnut/",
         icon: require("../assets/hellowalnut_logo.jpeg"),
         date: "Jan 2022 - Mar 2023",
@@ -100,7 +115,7 @@ const experiences = [
         date: "Jun 2021 - Aug 2021",
         description: "InternHacks is a seven-week program that combines the best of a tech internship and a hackathon. Students receive mentorship from tech industry engineers, designers, and product managers, build community & network with their peers through project collaboration.",
         work_items: [
-            "Programmed a responsive web application to support multiple devices and endorse environmental sustainability by allowing users to anonymously report and view sightings of locusts",
+            <>Programmed a responsive web application <a href="https://gitfront.io/r/Binhm/a196bd10089a4eed3666da0902e49057b465d03f/Lolo/"> (github.com/project)</a> to support multiple devices and endorse environmental sustainability by allowing users to anonymously report and view sightings of locusts</>,
             "Designed the stack and database architecture to ensure application’s scalability and ease development process in aspects including testing and transition to production environment",
             "Decreased application response time by 15% - 25% using optimized MySQL procedures" 
         ]
@@ -115,12 +130,9 @@ const experiences = [
         work_items: [
             "Increased the efficiency of the product by simplifying the encryption process using BaffleTM to protect sensitive information in databases",
             "Collaborated with stakeholders to communicate possible developments and features to improve their design processes and identify potential issues"
-
         ]
     }, 
-
 ]
-
 
 const education = {
     school: "University of California, Irvine",
