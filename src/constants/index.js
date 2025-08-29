@@ -9,12 +9,11 @@ const introduction = {
     description: `A passionate developer who wants to solve real-life problems with technology`
 }
 
-const resume_link = "https://drive.google.com/file/d/1zHrulLSNmaVkryxgYkgBsG14kuew4FRb/view?usp=sharing";
+const resume_link = "https://drive.google.com/file/d/1j6b0VdDg26JapetmkCEcvpHrpDcF-aSe/view?usp=sharing";
 const about = {
-    description: <>Hi, again! My name is Binh Mai and I have a strong interest in web development (with a backend bias) 
-                    and making a positive impact on my community through technology. I have around ~ 1 
-                    year of work experience at an early-stage 
-                    <a href="https://www.linkedin.com/company/hellowalnut/"> Fintech company</a>. 
+    description: <>Hi, again! My name is Binh Mai and I have a strong interest in web development
+                    and making a positive impact on my community through technology. I have around ~3 
+                    year of work experience as a software engineer and in startups.
                     I am seeking an engineering role where I can solve real-life problems that require well 
                     thought-out and test-driven solutions. Please don't hesitate to reach out!</>,
     skills: [ "Python", "Java", "C/C++", "MySQL", "JavaScript", "ReactJS", "TypeScript", "Spring Boot", "Spring MVC", "Hibernate", "OpenAPI", "EC2", "AWS API Gateway",
